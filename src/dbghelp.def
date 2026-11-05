@@ -1,0 +1,4 @@
+LIBRARY dbghelp
+EXPORTS
+    MiniDumpWriteDump=dbgcore.MiniDumpWriteDump
+    MiniDumpReadDumpStream=dbgcore.MiniDumpReadDumpStream

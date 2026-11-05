@@ -1,0 +1,30 @@
+{
+  "handoff_version": "1.0.0",
+  "architecture": "Windows x64",
+  "exports": {
+    "MiniDumpWriteDump": "dbgcore.MiniDumpWriteDump",
+    "MiniDumpReadDumpStream": "dbgcore.MiniDumpReadDumpStream"
+  },
+  "covered_server_imports": [
+    "MiniDumpWriteDump"
+  ],
+  "runtime_imports": [
+    "KERNEL32.dll"
+  ],
+  "handoff_size": 4608,
+  "files": {
+    "handoff": {
+      "sha256": "9102f433721d633428444baeb152bc6944c2e0410e284c3d74120ca9342cc607",
+      "size": 4608
+    },
+    "provided_greeneye_loader": {
+      "sha256": "973a2284ba4faf24e55c9e4b165c136c81dec4d3b1706b3f21f9cbd314c26eed",
+      "size": 294912
+    },
+    "provided_server": {
+      "sha256": "f0d824be7fcd48ebfe2458ff5c28da26060c2074e3ec1fcac587e5a1d508aeb2",
+      "size": 22786048
+    }
+  },
+  "scope": "Compilation and static PE/import/export checks passed; no Windows or DatHost runtime execution performed."
+}
